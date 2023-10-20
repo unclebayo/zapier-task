@@ -1,0 +1,11 @@
+---
+version: 2
+
+sources:
+  - name: shiny_indigo
+    database: shiny_indigo_hat
+    schema: public
+
+    tables:
+      - name: tasks_used
+        description: " "

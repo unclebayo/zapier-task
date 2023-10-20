@@ -1,0 +1,15 @@
+---
+version: 2
+
+models:
+  - name: fct_user_activity_summary
+    description: '{{ doc("fct_user_activity_summary") }}'
+    columns:
+      - name: date 
+        description: '{{ doc("stg_tasks_used_date") }}'
+
+      - name: active_users
+        description: '{{ doc("fct_user_activity_summary_active_users") }}'
+
+      - name: churned_users
+        description: '{{ doc("fct_user_activity_summary_churned_users") }}'

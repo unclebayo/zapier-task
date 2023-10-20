@@ -1,0 +1,15 @@
+---
+version: 2
+
+models:
+  - name: dim_churned_user_dates
+    description: '{{ doc("dim_churned_user_dates") }}'
+    columns:
+      - name: user_id
+        description: '{{ doc("stg_tasks_used_user_id") }}'
+
+      - name: churn_start_date
+        description: '{{ doc("dim_churned_user_dates_churn_start_date") }}'
+
+      - name: churn_end_date
+        description: '{{ doc("dim_churned_user_dates_churn_end_date") }}'

@@ -1,0 +1,29 @@
+---
+version: 2
+
+models:
+  - name: stg_tasks_used
+    description: '{{ doc("stg_tasks_used") }}'
+    columns:
+      - name: date
+        description: '{{ doc("stg_tasks_used_date") }}'
+        tests:
+          - not_null
+
+      - name: user_id
+        description: '{{ doc("stg_tasks_used_user_id") }}'
+
+      - name: account_id
+        description: '{{ doc("stg_tasks_used_account_id") }}'
+
+      - name: zap_id
+        description: '{{ doc("stg_tasks_used_zap_id") }}'
+
+      - name: min_timestamp
+        description: '{{ doc("stg_tasks_used_min_timestamp") }}'
+
+      - name: tasks_used
+        description: '{{ doc("stg_tasks_used_tasks_used") }}'
+
+      - name: errors
+        description: '{{ doc("stg_tasks_used_errors") }}'
