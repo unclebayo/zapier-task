@@ -1,0 +1,15 @@
+---
+version: 2
+
+models:
+  - name: dim_active_user_dates
+    description: '{{ doc("dim_active_user_dates") }}'
+    columns:
+      - name: user_id
+        description: '{{ doc("stg_tasks_used_user_id") }}'
+
+      - name: start_date
+        description: '{{ doc("dim_active_user_dates_start_date") }}'
+
+      - name: end_date
+        description: '{{ doc("dim_active_user_dates_end_date") }}'
